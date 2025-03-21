@@ -13,3 +13,8 @@ __Instrucciones__
 
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+__Test__
+
+curl -X POST http://127.0.0.1:8000/libro/ -H "Content-Type: application/json" -d '{"titulo": "Clean Code", "autor": "Robert Cecil Martin"}'
+curl -X GET http://127.0.0.1:8000/libro/1/

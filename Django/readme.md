@@ -15,3 +15,8 @@ python manage.py makemigrations usuarios
 python manage.py migrate
 
 python manage.py runserver
+
+__Test__
+
+curl -X POST http://127.0.0.1:8000/api/usuario/ -H "Content-Type: application/json" -d '{"nombre": "Juan", "email": "juan@example.com", "edad": 30}'
+curl -X GET http://127.0.0.1:8000/api/usuario/1/

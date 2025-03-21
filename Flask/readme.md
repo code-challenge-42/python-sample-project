@@ -13,3 +13,8 @@ __Notas__
 
 pip install -r requirements.txt
 flask run
+
+__Test__
+
+curl -X POST http://127.0.0.1:8000/producto/ -H "Content-Type: application/json" -d '{"nombre": "Vaso", "precio": "98"}'
+curl -X GET http://127.0.0.1:8000/libro/1/
