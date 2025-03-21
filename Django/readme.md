@@ -8,3 +8,10 @@ __Instrucciones__
     - Obtener un usuario por su id con GET.
  - Usa try-except para manejar errores de base de datos.
  - Asegúrate de usar deepcopy antes de modificar los datos.
+
+__Notas__
+
+python manage.py makemigrations usuarios
+python manage.py migrate
+
+python manage.py runserver
